@@ -1,0 +1,192 @@
+/*general*/
+*{
+    font-family:monospace;
+    margin: 0;
+    padding: 0;
+}
+/*Login Page Style*/
+.login-page {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    width: 100%;
+    height: 100vh; 
+}
+
+.login-form-left-part {
+    background-image: url("Images/LoginPageImg.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+.login-text{
+    color: blanchedalmond;
+    text-transform: capitalize;    
+    font-style: italic
+}
+
+.login-text-div{
+    margin-top: 50px;
+}
+
+.login-heading{
+    font-size: 45px;
+}
+
+.login-paragraph{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.login-form-right-part{
+    width: 100%;
+    height: 100vh;
+    background-color: papayawhip;
+    display: flex;
+}
+
+#loginForm , input{
+    font-style: italic;
+}
+
+#loginForm{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 500px;
+    background-color:transparent;
+    height: 65%;  
+    padding: 50px 60px 20px 13px;
+    margin: auto;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.2); 
+
+}
+.loginForm-heading{
+    font-size: xx-large;
+}
+.loginForm-paragraph{
+    font-size: 17px;
+    margin-top: -20px;
+}
+
+.password-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+}
+
+.show-password-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px; 
+}
+input{
+    padding: 10px;
+}
+
+.showPass{
+    font-size:15px;
+}
+.btn-login{
+    width: 100px;
+    padding: 10px;
+    font-size: 18px;
+    font-style: italic;
+    border: none;
+    display: inline-block;
+    margin: auto;
+    background-color: white;
+}
+
+.btn-login:hover{
+    cursor: pointer;
+    background-color:bisque;
+}
+
+
+
+
+@media (max-width: 800px) {
+    
+    .login-page {
+      grid-template-columns: 1fr 1fr; 
+    }
+  
+    .login-form-left-part {
+      background-size: cover; 
+      height: 100vh; 
+    }
+  
+    .login-heading {
+      font-size: 35px; 
+    }
+  
+    .login-paragraph {
+      font-size: 18px; 
+    }
+  
+    #loginForm {
+      padding: 30px; 
+      gap: 20px; 
+      max-width: 450px;
+    }
+  
+    .btn-login {
+      width: 100%;
+      font-size: 16px; 
+    }
+  
+    input {
+      font-size: 16px; 
+      padding: 12px; 
+    }
+  
+    .show-password-container {
+      gap: 5px; 
+    }
+  }
+  
+
+@media (max-width: 400px) {
+    
+    .login-page {
+      grid-template-columns: 1fr; 
+    }
+  
+    .login-form-left-part {
+      background-size: cover; 
+      height: 40vh;
+    }
+  
+    
+    .login-heading {
+      font-size: 30px; 
+    }
+  
+    .login-paragraph {
+      font-size: 16px;
+    }
+  
+    #loginForm {
+      padding: 20px; 
+      gap: 20px; 
+    }
+  
+    .btn-login {
+      width: 80%; 
+      font-size: 16px; 
+    }
+  
+    input {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .show-password-container {
+      gap: 3px; 
+    }
+  }

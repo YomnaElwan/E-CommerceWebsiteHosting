@@ -1,0 +1,830 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*Navbar Styling*/
+.navbar{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 2fr;
+    width: 100%;
+    height: 110px;
+    background-color: antiquewhite;
+}
+.left-part-nav{
+    margin: auto 50px;
+}
+.logo{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+.center-part-nav{
+    margin: auto 5px;
+}
+.navbar-lists{
+    display: flex;
+    list-style: none;
+}
+.navbar-lists li{
+    padding-left: 16px;
+}
+.navbar-lists a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 400;
+    letter-spacing: 0.1cap;
+}
+.navbar-lists a:hover{
+   color:burlywood;
+}
+.right-part-nav{
+    margin: auto 100px;
+    width: 700px;
+}
+
+.navbar-extra-details{
+    display: flex;
+    list-style: none;
+    justify-content: end;
+}
+
+.navbar-extra-details li {
+    padding-left: 50px;
+}
+.btn-home-login{
+    margin-top: 8px;     
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 0.1cap;
+    text-transform: capitalize;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    font-style: italic;
+    color:chocolate;
+    visibility: hidden;
+    
+}
+.btn-home-login:hover{
+    background-color: burlywood;
+    color:chocolate;
+}   
+
+.navbar-extra-details li a img {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar-extra-details li .user-name{
+margin-top: 18px;      
+font-size: 20px;
+font-weight: 500;
+
+}
+
+.navbar-extra-details li .logout{
+    margin-top: 8px;     
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 0.1cap;
+    text-transform: capitalize;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    font-style: italic;
+    color:chocolate;
+}
+
+
+.navbar-extra-details li .logout:hover{
+
+    background-color: burlywood;
+    color:chocolate;
+}
+
+/*Slider Styling*/
+.header{
+    width: 100%;
+}
+.slider{
+    width: 100%;
+}
+/*Slide One*/
+.slide1{
+    width: 100%;
+    background-image: url(Images/MenFashion.jpg);
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.discount{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color:antiquewhite;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px  transparent;
+    margin: 10px auto;
+    font-size: xx-large;
+    
+}
+.offer{
+    border: 1px solid antiquewhite;
+    width: fit-content;
+    padding: 30px;
+    font-size: xx-large;
+    margin-left: 300px;
+    margin-top: -100px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.category-men{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 650px;
+    padding-top: 100px;
+    font-size: 70px;
+    font-weight: bold;
+    
+}
+.men-word{
+    color: antiquewhite;
+    margin-right: 170px;
+    animation: slideInRight 0.9s ease-out 0.1s forwards; 
+}
+
+.fashion-word{
+    margin-left: 130px;
+    animation: slideInLeft 0.9s ease-out 0.2s forwards; 
+
+}
+.collection-word{
+    margin-left: 430px;
+    animation: slideInBottom 0.9s ease-out 0.4s forwards;
+}
+
+/*Slide Two*/
+.slide2{
+    width: 100%;
+    background-image: url(Images/WomenCategory.jpg);
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slide2-paragraph{
+    font-size: 70px;
+    font-weight: 700;
+    width: 30%;
+    margin-left: 200px;
+    padding-top: 100px;
+    color: antiquewhite;
+    animation: fadeInForward 0.9s ease-out 0.2s forwards;
+
+}
+.slide2-word-custom-style{
+    color: chocolate;    
+}
+.slide2-small-desc{
+    text-transform: uppercase;
+    font-size: 16px;
+    display: block;
+    width: fit-content;
+    margin-top: 30px;
+    margin-left: 200px;
+    font-style: italic;
+    color: chocolate;
+    font-weight: 600;
+    animation: fadeInForward 0.9s ease-out 0.4s forwards;
+}
+
+/*Slide Three*/
+.slide3{
+    padding-top: 100px;
+    width: 100%;
+    background-image: url(Images/KidsCategory.jpg);
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slide3-paragraph{
+    font-size: 45px;
+    width: 55%;
+    color: bisque;
+    font-style: italic;
+    margin-left: 100px;
+    letter-spacing: 0.1cap;
+    text-transform: capitalize;
+    animation: slideInLeft 0.9s ease-out 0.1s forwards; 
+
+}
+.slide3-desc{
+    text-transform: uppercase;
+    display: block;
+    margin-top: 40px;
+    font-size: 18px;
+    margin-left: 140px;
+    letter-spacing: 0.1cap;
+    animation: slideInRight 0.9s ease-out 0.2s forwards; 
+}
+
+/*Slide Four*/
+.slide4 {
+    width: 100%;
+    background-image: url(Images/MakeupCategory.jpg);
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+
+    
+}
+.slide4-heading{
+    text-transform: uppercase;
+    font-size: 20px;
+    background-color:rgb(227, 186, 171);
+    width: fit-content;
+    padding: 10px;
+    letter-spacing: 0.2cap;
+    text-align: center;
+    margin: auto;    
+    animation: slideInBottom 0.9s ease-out 0.4s forwards;
+}
+
+.slide4-span-beauty{
+    font-style: italic;
+    font-size: 60px;
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    color:rgb(199, 107, 107);
+    font-weight: 700;
+    animation: slideInBottom 0.9s ease-out 0.4s forwards;
+
+}
+.slide4-span-sale{
+    font-style: italic;
+    font-size: 160px;
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    animation: slideInBottom 0.9s ease-out 0.4s forwards;
+
+}
+.makeup-discount{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color:rgb(199, 107, 107);
+    text-align: center;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px  transparent;
+    font-size: xx-large;  
+}
+
+/*Slide Five*/
+.slide5{
+    width: 100%;
+    background-image: url(Images/ShoesCategory.jpg);
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slide5-heading{
+    text-align: center;
+    font-size: 38px;
+    color: chocolate;
+    font-style: italic;
+    padding: 50px 0;
+    letter-spacing: 0.2cap;
+    animation: fadeInForward 0.9s ease-out 0.4s forwards;    
+}
+.slide5-paragraph{
+    font-size: 22px;
+    width: 60%;
+    text-align: center;
+    margin-left: auto;
+    text-transform: capitalize;
+    line-height: 2;
+    animation: fadeInForward 0.9s ease-out 0.4s forwards;
+
+}
+
+.slide5-desc{
+    display: block;
+    text-align: right;
+    margin-right: 140px;
+    font-size: 20px;
+    margin-top: 35px;
+    color: chocolate;
+    font-style: italic;
+    animation: fadeInForward 0.9s ease-out 0.4s forwards;
+}
+
+/*Slide Six*/
+.slide6{
+    width: 100%;
+    background-image: url(Images/HairCare.jpg);
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+
+.slide6-heading{
+padding: 50px 80px;
+text-transform: uppercase;
+font-size: 30px;
+color: chocolate;
+font-weight: bold;
+animation: slideInBottom 0.9s ease-out 0.4s forwards;
+
+}
+
+.slide6-descript{
+    width: 42%;
+    padding: 0 50px 50px 80px;
+    line-height: 1.5;
+    font-size: x-large;
+    animation: slideInBottom 0.9s ease-out 0.4s forwards;
+
+}
+.slide6-offer{
+    border: 1px solid chocolate;
+    padding:0 50px 50px 80px;
+    width: fit-content;
+    margin-left: 100px;
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+    padding: 30px;
+    animation: slideInBottom 0.9s ease-out 0.4s forwards;
+}
+
+
+/*Slide Seven*/
+.slide7{
+    width: 100%;
+    background-image: url(Images/SkinCareCategory.jpg);
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+
+.slide7-heading{
+text-align: right;
+padding: 50px 80px;
+text-transform: uppercase;
+font-size: 30px;
+color: chocolate;
+font-weight: bold;
+animation: slideInRight 0.9s ease-out 0.4s forwards;
+
+}
+
+.slide7-descript{
+    margin: auto auto auto 622px;
+    width: 42%;
+    padding: 0 50px 50px 80px;
+    line-height: 1.5;
+    font-size: x-large;
+    animation: slideInRight 0.9s ease-out 0.4s forwards;
+
+}
+.slide7-offer{
+    margin: auto auto auto 700px;
+    border: 1px solid chocolate;
+    padding:0 50px 50px 80px;
+    width: fit-content;
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+    padding: 10px;
+    animation: slideInRight 0.9s ease-out 0.4s forwards;
+}
+
+/*Slide Eight*/
+.slide8{
+    width: 100%;
+    background-image: url(Images/GroceryCategory.jpg);
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+.slide8-heading{
+    text-transform: capitalize;
+    font-size: 30px;
+    letter-spacing: 0.1cap;
+    color:antiquewhite;
+    font-style: italic;
+    padding-top: 60px;
+    margin-left: 75px;
+    font-weight: bold;
+    text-align: center;
+    animation: slideInRight 0.9s ease-out 0.4s forwards;
+    
+    }
+    
+.slide8-descript{
+    width: 51%;
+    line-height: 1.5;
+    font-size: x-large;
+    margin: 40px auto auto 550px;
+    text-transform: capitalize;
+    animation: slideInRight 0.9s ease-out 0.4s forwards;   
+}
+/*Slide Nine*/
+.slide9{
+    width: 100%;
+    background-image: url(Images/HomeCategory.jpg);
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+.slide9-heading{
+    font-size: 50px;
+    padding: 40px;
+    font-style: italic;
+    font-weight: bold;
+    animation: slideInBottom ease-out 0.5s forwards;
+}
+.slide9-descript{
+    font-size: 20px;
+    padding: 10px 40px;
+    font-weight: bold;
+    line-height: 1.4;
+    letter-spacing: 0.1cap;
+    animation: slideInBottom ease-out 0.5s forwards;
+}
+/*Slide Ten*/
+.slide10 {
+    width: 100%;
+    background-image: url(Images/Electronics.jpg);
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    position: relative; 
+}
+
+.slide10-heading {
+    position: absolute;
+    right: 40px;
+    top: 20%; 
+    transform: translateY(-50%);
+    font-size: 45px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: right;
+    color: antiquewhite;
+    width: 70%;
+    animation: slideInRight 0.9s ease-out 0.4s forwards;   
+}
+
+.slide10-descript {
+    position: absolute;
+    right: 40px;
+    top: 40%; 
+    transform: translateY(-50%);
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 0.2cap;
+    text-align: center;
+    width: 65%;
+    animation: slideInRight 0.9s ease-out 0.4s forwards;   
+
+}
+
+/*Slide Show Hide*/
+.slide{
+    display: none;
+}
+.active {
+    display: block; 
+}
+
+/*Slider Controllers*/
+.btn-slider-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    z-index: 1000; 
+}
+#prev,#forward {
+    padding: 10px;
+    font-size: 50px;
+    font-weight: 400;
+    background-color: transparent;
+    cursor: pointer;
+    pointer-events: auto;
+    z-index: 10000;
+}
+/*Categories And Products Section*/
+.categories-products{
+    height: 5000px;
+    width: 100%;
+}
+
+.categories-with-line{
+    display: flex;
+    padding-top: 50px;
+    width: 50%;
+    left: 50%;
+    margin: 0 auto;
+}
+.span{
+    letter-spacing: 0.4cap;
+    text-transform: uppercase;
+    margin-top: -10px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0 10px;
+}
+.line{
+    width: 30%;
+    height: 3px;
+    background-color:chocolate;
+}
+
+.categories-products-div{
+    padding:20px;
+}
+
+#products-container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    gap:30px; 
+}
+/*Categories Card*/
+.category-card{
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    letter-spacing: 0.3cap;
+    background-color: antiquewhite;
+    font-weight: bold;
+    color: chocolate;
+    text-transform: uppercase;
+}
+
+.product-card{
+    border: 1px solid chocolate;
+    padding: 30px 15px;
+    width: 300px;
+    height: 550px;
+    box-shadow: 2px 2px 5px chocolate, -2px -2px 5px brown;
+}
+.product-name{
+    margin-top: 40px;
+    letter-spacing: 0.1cap;
+    font-size: 22px;
+}
+.product-price{
+font-size: 18px;
+margin-top: 10px;
+letter-spacing: 0.2cap;
+font-weight: 500;
+}
+
+.viewproduct-btn{
+    background-color: antiquewhite;
+    padding: 10px 12px;
+    font-size: 16px;
+    margin-top: 30px;
+    border: 1px solid chocolate;
+    color: chocolate;
+    letter-spacing: 0.1cap;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+}
+.viewproduct-btn:hover{
+    background-color: chocolate;
+    color: antiquewhite;
+    cursor: pointer;
+    border-color: antiquewhite;
+}
+.addtocart-btn{
+    background-color: chocolate;
+    padding: 10px 12px;
+    font-size: 16px;
+    margin-top: 30px;
+    border: 1px solid antiquewhite;
+    color: antiquewhite;
+    letter-spacing: 0.1cap;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+}
+.addtocart-btn:hover{
+    background-color: antiquewhite;
+    color: chocolate;
+    cursor: pointer;
+    border-color: chocolate;
+}
+/*Footer*/
+.footer{
+    background-color: antiquewhite;
+    bottom: 0;
+}
+.footer-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 50px;
+    justify-content: space-between;
+    gap: 90px;
+}
+
+.footer-heading{
+    font-size: 20px;
+    letter-spacing:0.1cap;
+    color: chocolate;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.footer-list{
+    list-style: none;
+}
+
+
+.footer-list li {
+   margin-bottom: 7px;
+}
+
+
+.footer-list li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    color: black;
+    letter-spacing:0.1cap;
+}
+
+.footer-list li a:hover{
+    text-decoration: underline;
+    color: chocolate;
+}
+
+ /*Signup */
+  .sign-up {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+.sign-up input {
+    padding: 10px;
+    border-radius: 50px;
+    letter-spacing: 0.2cap;
+    border: none;
+
+}
+
+.sign-up button {
+    background: chocolate;
+    color: antiquewhite;
+    text-transform: uppercase;
+    letter-spacing: 0.2cap;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+} 
+
+.sign-up button:hover {
+    background: antiquewhite;
+    color: chocolate;
+} 
+/*footer icons*/
+.footer-icons{
+    display: flex;
+    padding-top: 30px;
+    margin-left: 30px;
+    
+}
+.footer-icons div{ 
+    margin-left: 30px;
+    background-color: #2b2b2b;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: relative;
+    margin-left: 14px;
+}
+.twitter{
+    height: 20px;
+    width: 20px;
+}
+.facebook,.instagram{
+    height: 30px;
+    width: 30px;
+}
+.footer-icon-img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);   
+} 
+.footer-icons:hover{
+  cursor: pointer;
+}
+/*footer bottom*/
+.footer-bottom{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.footer-bottom-paragraph{
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 16px;
+}
+.footer-bottom-link{
+    text-decoration: none;
+    color: #2b2b2b;
+}
+.footer-bottom-link:hover{
+    text-decoration: underline;
+    color:chocolate;
+}
+#go-up{
+    padding: 10px 20px;
+    margin-left: 40px;
+    border: none;
+    background-color: chocolate;
+    color: antiquewhite;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.1cap;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: none;
+}
+/*Animation*/
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInForward {
+    0% {
+        transform: translatex(-100px);
+        opacity: 0;
+    }
+  
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+

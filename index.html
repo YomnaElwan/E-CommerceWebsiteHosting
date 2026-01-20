@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Home.css" rel="stylesheet">
+    <link href="Alert.css"rel="stylesheet">
+    <title>Home Page</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="left-part-nav">
+            <img src="Images/Logo.webp" class="logo">
+        </div>
+        <div class="center-part-nav">
+            <ul class="navbar-lists">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+        <div class="right-part-nav">
+            <ul class="navbar-extra-details">
+                <li><button type="submit" class="btn-home-login">Login</button></li>
+                <li><a href="Cart.html"><img src="Images/Cart.svg"></a></li>
+                <li>
+                    <p class="user-name"></p>
+                </li>
+                <li><button onclick=" logout()" class="logout">logout</button></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Slider -->
+    <header class="header">
+        <div class="slider">
+            <!-- Slide One -->
+            <div class="slide1 slide active">
+                <div class="category-men">
+                    <span class="men-word">Men</span>
+                    <span class="fashion-word">Fashion</span>
+                    <span class="collection-word">Collection</span>
+                </div>
+                <div class="discount">Sale 20% on Item</div>
+                <div class="offer">Buy 3 Get 1 For Free !</div>
+            </div>
+            <!--Slide Two-->
+            <div class="slide2 slide">
+                <p class="slide2-paragraph">Discovering the different <span
+                        class="slide2-word-custom-style">Types</span> of women's Clothing</p>
+                <span class="slide2-small-desc">your ultimate guide</span>
+            </div>
+            <!--Slide Three-->
+            <div class="slide3 slide">
+                <p class="slide3-paragraph">Find the perfect mix of fun, comfort, and style for kids with our collection
+                    of clothing, toys, and essentials!</p>
+                <span class="slide3-desc">
+                    Joyful essentials for kids, from clothes to toys!
+                </span>
+            </div>
+            <!-- Slide Four -->
+            <div class="slide4 slide">
+                <h3 class="slide4-heading">only this week</h3>
+                <span class="slide4-span-beauty">Beauty</span>
+                <span class="slide4-span-sale">SALE</span>
+                <div class="makeup-discount">Sale 35% </div>
+            </div>
+
+            <!-- Slide Five -->
+            <div class="slide5 slide">
+                <h4 class="slide5-heading">New Arrival!</h4>
+                <p class="slide5-paragraph">Explore our wide selection of footwear, designed for comfort, style, and
+                    durability. From casual sneakers to formal shoes,Whether you're looking for everyday wear, athletic
+                    shoes, or special event footwear, you'll find the perfect fit to complete any outfit.</p>
+                <span class="slide5-desc">Step into style and comfort with our collection of footwear for every
+                    occasion!</span>
+            </div>
+
+            <!--Slide Six-->
+            <div class="slide6 slide">
+                <p class="slide6-heading">hair care essentials</p>
+                <p class="slide6-descript">Pamper your hair with our collection of shampoos, conditioners, and
+                    treatments. From moisturizing to strengthening, we offer everything you need to maintain soft,
+                    shiny, and healthy hair.</p>
+                <div class="slide6-offer">Buy 1 get 40% off on 2</div>
+            </div>
+
+            <!--Slide Seven-->
+            <div class="slide7 slide">
+                <p class="slide7-heading">Glow From Your Perfect Skincare Routine</p>
+                <p class="slide7-descript">Discover the secrets to radiant, healthy skin with our curated skincare
+                    essentials. Whether you're looking to hydrate, rejuvenate, or protect, our range of products caters
+                    to all your skincare needs. Embrace a routine that works for your skin type and enjoy a glowing
+                    complexion every day</p>
+                <div class="slide7-offer">Buy 4 get 3 free</div>
+            </div>
+            <!--Slide Eight-->
+            <div class="slide8 slide">
+                <p class="slide8-heading">Fresh, Affordable, and Convenient</p>
+                <p class="slide8-descript">At Grocessary, we bring you the freshest produce, high-quality essentials,
+                    and unbeatable prices all in one place. From pantry staples to seasonal favorites, shopping for your
+                    everyday needs has never been easier. Enjoy a wide selection of groceries delivered straight to your
+                    door or ready for pick-up all with the convenience and value you deserve</p>
+            </div>
+             <!--Slide Nine-->
+             <div class="slide9 slide">
+                <p class="slide9-heading">Eco-Friendly Living Starts Here</p>
+                <p class="slide9-descript">Transform your living space with our carefully curated home essentials. From modern furniture and cozy decor to functional storage solutions, we offer everything you need to create a home thats both stylish and comfortable.</p>
+            </div>
+            <!--Slide Ten-->
+            <div class="slide10 slide">
+                <p class="slide10-heading">Latest Tech, Best Performance.Power Up Your Life!</p>
+                <p class="slide10-descript">Upgrade your lifestyle with the latest and greatest in technology! From cutting-edge smartphones and powerful laptops to high-quality audio gear and smart home devices, we’ve got everything you need.</p>
+            </div>
+
+
+            <!--Globally Used For All Slides-->
+            <div class="btn-slider-container">
+                <button id="prev"><</button>
+                <button id="forward">></button>
+            </div>
+        </div>
+
+    </header>
+    <!--Categories and Products Section-->
+    <!--Categories-->
+    <section class="categories-products">
+        <div class="categories-with-line">
+            <small class="line"></small>
+            <span class="span">our products</span>
+            <small class="line"></small>
+        </div>
+        <div class="categories-products-div">
+            <div id="categories-container">
+            </div>
+            <!--Products-->
+            <div id="products-container"></div>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer-content">
+             <!--SHOP-->
+        <div>
+            <h4 class="footer-heading">Shop</h4>
+            <ul class="footer-list">
+              <li><a href="#">men</a></li>
+              <li><a href="#">women</a></li>
+              <li><a href="#">kids</a></li>
+              <li><a href="#">makeup</a></li>
+              <li><a href="#">footwear</a></li>
+              <li><a href="#">haircare</a></li>
+              <li><a href="#">skincare</a></li>
+              <li><a href="#">grocery</a></li>
+              <li><a href="#">home</a></li>
+              <li><a href="#">electronics</a></li>
+            </ul>
+       </div>
+
+ <!--Customer Service-->
+ <div>
+    <h4 class="footer-heading">Customer service</h4>
+    <ul class="footer-list">
+      <li><a href="#">contact us</a></li>
+      <li><a href="#">shipping & returns</a></li>
+      <li><a href="#">track order</a></li>
+      <li><a href="#">size guide</a></li>
+    </ul>
+</div>
+
+ <!--About Us-->
+ <div>
+    <h4 class="footer-heading">about us</h4>
+    <ul class="footer-list">
+      <li><a href="#">our story</a></li>
+      <li><a href="#">careers</a></li>
+      <li><a href="#">team</a></li>
+    </ul>
+</div>
+ <!--sign up-->
+ <div>
+    <h4 class="footer-heading">Sign up for exclusive offers</h4>
+    <div class="sign-up">
+    <input type="email" placeholder="Your Email Address">
+    <button>Subscribe</button>
+    </div>
+    <div class="footer-icons">
+        <div>
+            <img src="images/White-Twitter.svg" class="footer-icon-img twitter">
+        </div>
+        <div>
+            <img src="images/White-Facebook.svg" class="footer-icon-img facebook">
+        </div>
+        <div>
+            <img src="images/White-Instagram.svg" class="footer-icon-img instagram">
+        </div>
+    <button id="go-up">Go Up </button>
+
+    </div>
+</div>
+ </div>
+       
+<div class="footer-bottom">
+    <p class="footer-bottom-paragraph">&copy; 2025 Amazona. All Rights Reserved.</p>
+    <a class="footer-bottom-link" href="#">Terms of Service</a> | 
+    <a class="footer-bottom-link" href="#">Privacy Policy</a> | 
+    <a class="footer-bottom-link" href="#">Return Policy</a>
+</div>
+    </footer>
+    <script src="Home.js" defer></script>
+    <script src="Alert.js"></script>
+</body>
+
+</html>

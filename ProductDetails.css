@@ -1,0 +1,64 @@
+#product-details{
+    height: 1500px;
+}
+
+.product-details-card{
+    margin: 150px auto;
+    border: 1px solid chocolate;
+    padding: 100px 120px;
+    width: 300px;
+    height: 700px;
+    text-align: center;
+    box-shadow: 2px 2px 5px chocolate, -2px -2px 5px brown;
+}
+
+.product-name{
+    letter-spacing: 0.1cap;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+.product-desc{
+    font-size: 18px;
+    letter-spacing: 0.1cap;
+    font-weight: 500;
+}
+
+.product-price,.product-quantity,.product-category{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.price-word,.available-quantity-word,.category-word,#product-quantity-input{
+    color: chocolate;
+    font-weight: 700;
+    letter-spacing: 0.1cap;
+}
+.quantity-word{
+    color: chocolate;
+    font-weight: 700;
+    letter-spacing: 0.1cap;
+    font-size: large;   
+}
+#product-quantity-input{
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.addToCart{
+    padding: 15px 28px;
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: linen;
+    color: chocolate;
+    border: 1px solid chocolate;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}
+
+.addToCart:hover{
+background-color: chocolate;
+color: linen;
+}

@@ -1,0 +1,17 @@
+.order-successful-div{
+    height: 1000px;
+    justify-content: center;
+    display: flex;
+}
+
+.order-div{
+    background-color: chocolate;
+    padding: 350px;
+    height: fit-content;
+    width: fit-content;
+    text-align: center;
+    margin-top: 100px;
+    color: antiquewhite;
+    font-size: 50px;
+    letter-spacing: 0.1cap;
+}
