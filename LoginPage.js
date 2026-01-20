@@ -40,7 +40,33 @@ function addNewUser(username, email, password, confirmPassword) {
 // addNewUser("YOMNA","Yomnaelwan19@gmail.com","Yomna@123","Yomna@123");
 // addNewUser("Saif","Saif15@gmail.com","Saif@123","Saif@123");
 
+//Seeding 
+function seedDefaultUser() {
+  let users = JSON.parse(localStorage.getItem("users")) || [];
+
+  const defaultEmail = "Yomnaelwan19@gmail.com";
+  const defaultUsername = "YOMNA";
+
+  const userExists = users.some(
+    user =>
+      user.email.toLowerCase() === defaultEmail.toLowerCase() ||
+      user.username.toLowerCase() === defaultUsername.toLowerCase()
+  );
+
+  if (!userExists) {
+    addNewUser(
+      "YOMNA",
+      "Yomnaelwan19@gmail.com",
+      "Yomna@123",
+      "Yomna@123"
+    );
+  }
+}
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
+    seedDefaultUser();
   const loginForm = document.getElementById("loginForm");
 
   loginForm.addEventListener("submit", function (event) {
